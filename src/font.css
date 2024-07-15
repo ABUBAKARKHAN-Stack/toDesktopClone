@@ -1,0 +1,29 @@
+/* fonts.css */
+@font-face {
+    font-family: 'TT Hoves Pro';
+    src: url('/path/to/fonts/TT-Hoves-Pro-Regular.woff2') format('woff2'),
+         url('/path/to/fonts/TT-Hoves-Pro-Regular.woff') format('woff'),
+         url('/path/to/fonts/TT-Hoves-Pro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TT Hoves Pro';
+    src: url('/path/to/fonts/TT-Hoves-Pro-Bold.woff2') format('woff2'),
+         url('/path/to/fonts/TT-Hoves-Pro-Bold.woff') format('woff'),
+         url('/path/to/fonts/TT-Hoves-Pro-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'TT Hoves Pro';
+    src: url('/path/to/fonts/TT-Hoves-Pro-Bold.woff2') format('woff2'),
+         url('/path/to/fonts/TT-Hoves-Pro-Bold.woff') format('woff'),
+         url('/path/to/fonts/TT-Hoves-Pro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* Add more @font-face rules if you have different styles or weights */
+  

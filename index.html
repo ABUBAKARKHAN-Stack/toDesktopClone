@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDesktop</title>
+    <link rel="icon" href="https://www.todesktop.com/favicon.png"/>
+    <link rel="stylesheet" href="src/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/fonts.css">
+    <link rel="stylesheet" href="/src/mobile-menu.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        transition: background-color 0.3s, color 0.3s;
+    }
+</style>
+
+<body>
+    <nav id="navdt" class="h-[70px] w-[100%] flex justify-between items-center px-6 text-[#2f3033]">
+        <div class="flex justify-center items-center gap-2 cursor-pointer">
+            <img src="/assets/pics/Main.avif" class="w-[48px] h-[48px]" alt="Logo">
+            <span class="font-[550] text-[18px] font-tt-hoves-pro">ToDesktop</span>
+        </div>
+        <ul
+            class="list-none lg:flex hidden justify-center gap-10 ml-6 items-center w-[50%] text-lg font-tt-hoves-pro font-[600]">
+            <li class="lg:hover:text-[#3238f2] lg:cursor-pointer lg:transition lg:ease-in-out lg:hover:text-pretty">Docs
+            </li>
+            <li class="lg:hover:text-[#3238f2] lg:cursor-pointer lg:transition lg:ease-in-out lg:hover:text-pretty">
+                Changelog</li>
+            <li class="lg:hover:text-[#3238f2] lg:cursor-pointer lg:transition lg:ease-in-out lg:hover:text-pretty">Blog
+            </li>
+            <li class="lg:hover:text-[#3238f2] lg:cursor-pointer lg:transition lg:ease-in-out lg:hover:text-pretty">
+                Login</li>
+        </ul>
+        <div
+            class="border-[1.5px] border-[#d6d7da] px-6 py-2 rounded-lg lg:flex justify-center items-center hidden gap-3 cursor-pointer hover:transition-colors hover:border-[#bebec1]">
+            <img src="assets/pics/electron.svg" alt="Electron">
+            <p class="font-[500] text-[16px] text-nowrap">Electron Developers</p>
+            <img src="/assets/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNCAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBjbGFzcz0iIGlubGluZS1ibG9jayAgaG92ZXI6IG1sLTEgYWxpZ24tYmFzZWxpbmUgdGV4d.svg"
+                class="mt-1" alt="Arrow">
+        </div>
+        <button id="black" class=" button w-10 hidden lg:block after:text-white">
+            <img src="/assets/pics/lightmode.png" alt="light-theme-logo">
+        </button>
+        <button class="lg:hidden flex justify-end items-center w-full" id="hamburger">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </button>
+    </nav>
+    <div class="w-full h-[0.5px] bg-gray-200"></div>
+
+    <!-- Mobile Menu -->
+    <div class=" hidden lg:hidden flex flex-col gap-3 items-start font-tt-hoves-pro font-[600] bg-white shadow-md p-4"
+        id="mobile-menu">
+        <a href="#" class="block w-[100%] hover:bg-[#eaeaec] rounded-md py-2 px-4 text-gray-700">Docs</a>
+        <a href="#" class="block w-[100%] hover:bg-[#eaeaec] rounded-md py-2 px-4 text-gray-700">Changelog</a>
+        <a href="#" class="block w-[100%] hover:bg-[#eaeaec] rounded-md py-2 px-4 text-gray-700">Blog</a>
+        <a href="#" class="block w-[100%] hover:bg-[#eaeaec] rounded-md py-2 px-4 text-gray-700">Login</a>
+        <div class="w-full h-[0.5px] bg-gray-200"></div>
+        <a href="#" class="block w-[100%] hover:bg-[#eaeaec] rounded-md py-2 px-4 text-gray-700">
+            <div class="flex gap-4">
+                <img id="black" src="/assets/pics/electron.svg" alt="">
+                <p class="font-[500] text-[16px]">Electron Developers</p>
+            </div>
+        </a>
+        <button id="darkthemeforSm" class="flex justify-center items-center relative left-3">
+            <img src="/assets/pics/Darkmode.png" alt="darktheme-logo" class="w-8">
+            <p id="text-change" class="ml-2 font-tt-hoves-pro text-gray-700">Switch To Dark Mode</p>
+        </button>
+    </div>
+
+    <!-- HERO SECTION PART 1 -->
+
+    <div class="mx-auto w-full flex flex-col px-8 lg:px-12 lg:max-w-5xl">
+        <div class="h-[30%] w-full mt-20 font-[500]">
+            <p class="text-3xl md:text-4xl">ToDesktop Blog</p>
+            <p class="text-[#96979b] text-lg mt-2 font-tt-hoves-pro font-[400]">
+                We cover topics related to Electron, desktop apps, and the ToDesktop platform.
+            </p>
+        </div>
+        <div class="w-full flex flex-col lg:flex-row mt-10 gap-6 lg:gap-16">
+            <img src="/assets/pics/herosec-1.png"
+                class="rounded-2xl mx-auto w-[1024px] h-44 object-cover lg:w-96 lg:h-72 cursor-pointer">
+            <div>
+                <div class="text-[12px] flex flex-wrap items-center gap-4 text-[#656464]">
+                    <span>Jan 18, 2024</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer">Electron</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer">Tauri</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer">macOS</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer">Windows</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer">Linux</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer">Design</span>
+                </div>
+                <p class="text-[18px] font-[500] hover:text-[#85868b] hover:cursor-pointer">Designing desktop apps for cross-platform UX</p>
+                <div class="mt-5 font-tt-hoves-pro text-[#96979b]">
+                    <p class="cursor-pointer">
+                        Designing and converting web apps into desktop apps can be challenging due to differences in
+                        conventions between the two platforms. To help with this, we’ve compiled guidelines to follow
+                        when using cross-platform technologies like Electron and Tauri to build desktop apps.
+                    </p>
+                </div>
+                <div class="w-full h-[0.5px] mt-8 bg-gray-200"></div>
+                <div class="flex items-center gap-4 text-[14px] ">
+                    <img src="/assets/pics/Dev-1.jpg" class=" hover:cursor-pointer mt-6 w-12 rounded-full">
+                    <div class="flex flex-col justify-center items-start mt-4">
+                        <span class="font-[600] hover:cursor-pointer ">Abubakar Khan</span>
+                        <span class="text-[#96979b] font-tt-hoves-pro hover:cursor-pointer ">Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIXED IMAGE -->
+    <div class="float-right fixed right-7 bottom-5 hover:cursor-pointer">
+        <div
+            class="h-[48px] w-[48px] bg-[#3238f2] rounded-[50%] flex justify-center items-center hover:h-[55px] hover:w-[55px] transition-all duration-300 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32" class="w-[1.45rem]">
+                <path fill="#ffff"
+                    d="M28 32s-4.714-1.855-8.527-3.34H3.437C1.54 28.66 0 27.026 0 25.013V3.644C0 1.633 1.54 0 3.437 0h21.125c1.898 0 3.437 1.632 3.437 3.645v18.404H28V32zm-4.139-11.982a.88.88 0 00-1.292-.105c-.03.026-3.015 2.681-8.57 2.681-5.486 0-8.517-2.636-8.571-2.684a.88.88 0 00-1.29.107 1.01 1.01 0 00-.219.708.992.992 0 00.318.664c.142.128 3.537 3.15 9.762 3.15 6.226 0 9.621-3.022 9.763-3.15a.992.992 0 00.317-.664 1.01 1.01 0 00-.218-.707z">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- HERO SECTION PART 2 -->
+    <div class="mx-auto w-full flex flex-col px-8 lg:px-12 lg:max-w-5xl">
+        <div class="w-full flex flex-col lg:flex-row mt-10 gap-6 lg:gap-16">
+            <img src="/assets/pics/herosec-2.png" class=" cursor-pointer hidden lg:block rounded-2xl w-full h-[21.5rem]">
+            <img src="/assets/pics/herosec2forSM.png"
+                class=" cursor-pointer block lg:hidden rounded-[18px] mx-auto w-[1024px] h-44 object-cover">
+            <div>
+                <div class="text-[12px] flex flex-wrap items-center gap-4 text-[#656464]">
+                    <span>Jan 4, 2024</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer ">ToDesktop Builder</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer ">Tailwind</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer ">CSS</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer ">Electron</span>
+                </div>
+                <p class="text-[18px] font-[500] hover:text-[#85868b] hover:cursor-pointer">Using Tailwind for styling with ToDesktop Builder</p>
+                <div class="mt-5 font-tt-hoves-pro text-[#96979b]">
+                    <p class="cursor-pointer">We're thrilled to announce a significant enhancement for developers using ToDesktop for their
+                        desktop app creation: Tailwind CSS support! This new feature stems from a simple yet powerful
+                        idea—integrating ToDesktop-specific Tailwind modifiers like todesktop:hidden and mac:rounded-lg.
+                        This integration streamlines the styling process, enabling developers to apply platform-specific
+                        styles effortlessly, without the need for a separate global.css file.</p>
+                </div>
+                <div class="w-full h-[0.5px] mt-8 bg-gray-200"></div>
+                <div class="flex items-center gap-4 text-[14px]">
+                    <img src="/assets/pics/Dev-1.jpg" class="mt-6 w-12 rounded-full cursor-pointer">
+                    <div class="flex flex-col justify-center items-start mt-4">
+                        <span class="font-[600] cursor-pointer">Abubakar Khan</span>
+                        <span class="text-[#96979b] font-tt-hoves-pro cursor-pointer">Founder of ToDesktop</span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION PART 3 -->
+    <div class="mx-auto w-full flex flex-col px-8 lg:px-12 lg:max-w-5xl">
+        <div class="w-full flex flex-col lg:flex-row mt-10 gap-6 lg:gap-16">
+            <img src="/assets/pics/herosec-3.png" class=" cursor-pointer hidden lg:block rounded-2xl w-[30%] h-[22rem]">
+            <img src="/assets/pics/herosec-3forSM.png"
+                class="cursor-pointer  block lg:hidden rounded-[18px] mx-auto w-[1024px] h-44 md:h-60">
+            <div>
+                <div class="text-[12px] flex flex-wrap items-center gap-4 text-[#656464]">
+                    <span class="hidden lg:block">Oct 27, 2023</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer">Electron</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer">Code Signing</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer">macOS</span>
+                </div>
+                <p class="text-[18px] font-[500] hover:text-[#85868b] hover:cursor-pointer">How to gracefully switch to a new code signing cert on Mac</p>
+                <span class="block lg:hidden">Oct 27, 2023</span>
+                <div class="mt-5 font-tt-hoves-pro sm:w-[70%] w-full text-[#96979b]">
+                    <p class="cursor-pointer">Transitioning from an individual developer's certificate to an organization's certificate for an
+                        Electron app on macOS can be a tricky process, particularly when it comes to maintaining a
+                        seamless auto-update experience for your users. In this guide, we'll walk through the steps to
+                        ensure a smooth transition between certificates, preventing errors and ensuring your app's
+                        designated requirements (DR) are met.</p>
+                </div>
+                <div class="w-full h-[0.5px] mt-8 bg-gray-200"></div>
+                <div class="flex items-center gap-4 text-[14px]">
+                    <img src="/assets/pics/Dev-1.jpg" class=" cursor-pointer mt-6 w-12 rounded-full">
+                    <div class="flex flex-col justify-center items-start mt-4">
+                        <span class="font-[600] cursor-pointer ">Abubakar Khan</span>
+                        <span class="text-[#96979b] font-tt-hoves-pro cursor-pointer ">Founder of ToDesktop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section Part 4 -->
+    <div class="mx-auto w-full flex flex-col px-8 lg:px-12 lg:max-w-5xl">
+        <div class="w-full flex flex-col lg:flex-row mt-10 gap-6 lg:gap-16">
+            <img src="/assets/pics/herosec-4.png" class="cursor-pointer hidden lg:block rounded-[18px] w-[30%] h-[20rem]">
+            <img src="/assets/pics/herosec-4forSM.png"
+                class="cursor-pointer block lg:hidden rounded-2xl mx-auto w-[1024px] h-44 md:h-72">
+            <div>
+                <div class="text-[12px] flex flex-wrap items-center gap-4 text-[#656464]">
+                    <span class="hidden lg:block">Oct 27, 2023</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer">Electron</span>
+                    <span class="px-2 py-1 bg-[#fbfbfd] font-[400] rounded-3xl cursor-pointer">Debugging</span>
+                </div>
+                <p class="text-[18px] font-[500] hover:text-[#85868b] hover:cursor-pointer">Decompile an Electron App: A Step-by-Step Guide</p>
+                <span class="block lg:hidden">Oct 27, 2023</span>
+                <div class="mt-5 font-tt-hoves-pro sm:w-[70%] w-full text-[#96979b]">
+                    <p class="cursor-pointer">In this article, we will guide you through the process of decompiling a production Electron app
+                        on Mac or Windows. I've found this useful for debugging issues that only seem to appear in the
+                        production app but not in development. It's also a neat trick if you want to look into the
+                        source of any Electron Application.
+                    </p>
+                </div>
+                <div class="w-full h-[0.5px] mt-8 bg-gray-200"></div>
+                <div class="flex items-center gap-4 text-[14px]">
+                    <img src="/assets/pics/Dev-1.jpg" style="border-radius: 50%;" class="cursor-pointer mt-6 w-12">
+                    <div class="flex flex-col justify-center items-start mt-4">
+                        <span class="font-[600] cursor-pointer">Abubakar Khan</span>
+                        <span class="text-[#96979b] font-tt-hoves-pro cursor-pointer">Founder of ToDesktop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section Part 5 -->
+    <div class="w-[90%] mx-auto h-[16rem] lg:h-[10rem] mt-10 flex flex-col justify-center items-center lg:items-start bg-[#fdfdfb] border lg:max-w-6xl rounded-2xl"
+        id="herosec-5">
+        <div
+            class="text-[#858383] w-full flex flex-col gap-8 justify-center items-center lg:px-10 lg:justify-between lg:flex-row-reverse">
+            <p id="herosec-5"
+                class="block lg:hidden text-[19px] font-tt-hoves-pro hover:text-black hover:transition-colors hover:cursor-pointer">
+                Documentation</p>
+            <div class="flex gap-10 justify-center items-end">
+                <svg class="h-6 w-6 hover:text-black hover:transition-colors hover:cursor-pointer" fill="currentColor"
+                    viewBox="0 0 24 24" aria-hidden="true" color="#96979b">
+                    <path
+                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84 ">
+                    </path>
+                </svg>
+                <svg class="h-6 w-6 hover:text-black hover:transition-colors hover:cursor-pointer" fill="currentColor"
+                    viewBox="0 0 24 24" aria-hidden="true" color="#96979b">
+                    <path fill-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </div>
+            <p
+                class="hidden lg:flex lg:gap-10 text-[19px] font-tt-hoves-pro hover:text-black hover:transition-colors hover:cursor-pointer">
+                Documentation</p>
+            <div class="w-[100%]"></div>
+            <div class="flex justify-center items-center hover:cursor-pointer">
+                <img src="/assets/pics/Main.avif" class="w-[48px] h-[48px]" alt="Logo">
+                <span class="text-[18px] text-black font-[500]">ToDesktop</span>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="py-14 w-full">
+        <div class="w-full mx-auto flex justify-center text-wrap text-center items-center gap-2">
+            <img src="/assets/pics/footersec.svg" alt="AY-LOGO" class="w-3">
+            <p class="text-[#858383] text-[12px] font-[500]">A Y Combinator company.</p>
+        </div>
+        <div class="text-[#858383] text-center text-wrap text-[14px] font-[400] mt-2">
+            &copy; 2024 ToDesktop, Inc. All rights reserved.
+        </div>
+    </footer>
+    <script src="/functionality/script.js"></script>
+    <script src="/functionality/darktheme.js"></script>
+</body>
+</html>
